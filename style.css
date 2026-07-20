@@ -7,8 +7,14 @@
   src: url("./font/Recipekorea.ttf") format("truetype");
 }
 
+html {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
+  padding: 0;
   min-height: 100vh;
   background: #f5efe0;
   font-family: "NanumSquare", "Apple SD Gothic Neo", sans-serif;
@@ -17,7 +23,7 @@ body {
 .frame-56 {
   position: relative;
   width: 100%;
-  min-height: 947px;
+  height: 100vh;
   overflow: hidden;
   background: #ffffff;
 }
@@ -38,9 +44,9 @@ body {
 
 .top-bar {
   position: absolute;
-  left: 67px;
+  left: 4.653%;
   top: 67px;
-  width: 1298px;
+  width: 90.139%;
   height: 81px;
   display: flex;
   justify-content: space-between;
@@ -88,7 +94,7 @@ body {
   position: absolute;
   width: 90px;
   height: 138px;
-  left: 1300px;
+  left: 90.278%;
   top: 28px;
   object-fit: contain;
   display: block;
@@ -97,9 +103,9 @@ body {
 
 .hero-illustration {
   position: absolute;
-  width: 535px;
-  height: 730px;
-  left: 823px;
+  width: 420px;
+  height: 573px;
+  left: 57.153%;
   top: 298px;
   object-fit: contain;
   filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.5));
@@ -110,7 +116,7 @@ body {
   position: absolute;
   width: 149.75px;
   height: 149.75px;
-  left: 536px;
+  left: 39%;
   top: 592px;
   object-fit: contain;
   transform: rotate(-9.4deg);
@@ -119,7 +125,7 @@ body {
 
 .hero-text {
   position: absolute;
-  left: 80px;
+  left: 5.556%;
   top: 431px;
   width: 691px;
   height: 203px;
@@ -139,13 +145,13 @@ body {
   position: absolute;
   inset: 0;
   color: #000000;
-  -webkit-text-stroke: 20px #83673a;
+  -webkit-text-stroke: 16px #83673a;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-family: "BR B", "Apple Myungjo", serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 90px;
-  line-height: 92px;
+  font-size: 75px;
+  line-height: 76px;
 }
 
 .headline .fill {
@@ -154,8 +160,8 @@ body {
   font-family: "BR B", "Apple Myungjo", serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 90px;
-  line-height: 92px;
+  font-size: 75px;
+  line-height: 76px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -163,7 +169,7 @@ body {
   position: absolute;
   width: 245px;
   height: 245px;
-  left: 586px;
+  left: 43%;
   top: 624px;
   object-fit: contain;
   transform: rotate(18.22deg);
@@ -194,14 +200,15 @@ body {
 
 .meet-heading {
   position: absolute;
-  width: 498px;
-  left: 471px;
+  width: 600px;
+  left: 50%;
+  transform: translateX(-50%);
   top: 585px;
   margin: 0;
   font-family: "Cafe24 Ssurround";
   font-style: normal;
   font-weight: 700;
-  font-size: 65px;
+  font-size: 45px;
   line-height: 80px;
   text-align: center;
   letter-spacing: 0.05em;
@@ -225,7 +232,7 @@ body {
   position: absolute;
   width: 6px;
   height: 8px;
-  left: 1409px;
+  left: 97.847%;
   top: 278px;
   background: #d9d9d9;
 }
@@ -623,7 +630,8 @@ body {
   gap: 20px;
   width: max-content;
   height: 75px;
-  left: 378px;
+  left: 50%;
+  transform: translateX(-50%);
   top: 1607px;
   z-index: 3;
 }
@@ -635,7 +643,7 @@ body {
   font-family: "Cafe24 Ssurround";
   font-style: normal;
   font-weight: 700;
-  font-size: 75px;
+  font-size: 60px;
   line-height: 100%;
   letter-spacing: 0.03em;
   color: #402500;
@@ -668,7 +676,8 @@ body {
   position: absolute;
   width: 1071px;
   height: 603px;
-  left: 185px;
+  left: 50%;
+  transform: translateX(-50%);
   top: 1747px;
   border-radius: 40px;
   object-fit: cover;
@@ -678,7 +687,8 @@ body {
 .official-caption {
   position: absolute;
   width: 418px;
-  left: 511px;
+  left: 50%;
+  transform: translateX(-50%);
   top: 2398px;
   margin: 0;
   font-family: "Pretendard";
@@ -700,14 +710,13 @@ body {
   width: 100%;
   height: 945px;
   background: #fff9e6;
-  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 2px;
 }
 
 .history-heading {
   position: absolute;
   width: 331px;
-  left: 71px;
+  left: 4.931%;
   top: 97px;
   margin: 0;
   font-family: "Cafe24 Ssurround";
@@ -729,6 +738,8 @@ body {
   left: 0;
   width: 52.9167%;
   background: #8e2626;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .history-panel--right {
@@ -873,6 +884,15 @@ body {
   background: #fff9e6;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 2px;
+}
+
+.event-inner {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 1440px;
+  height: 906px;
 }
 
 .event-heading {
@@ -1073,6 +1093,15 @@ body {
   border-radius: 2px;
 }
 
+.sns-inner {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 1440px;
+  height: 740px;
+}
+
 .sns-header {
   position: absolute;
   left: -10px;
@@ -1099,8 +1128,11 @@ body {
 }
 
 .sns-instagram {
-  margin: 0;
+  position: absolute;
   width: 398px;
+  left: 73px;
+  top: 75px;
+  margin: 0;
   font-family: "Cafe24 Ssurround OTF";
   font-style: normal;
   font-weight: 700;
@@ -1112,20 +1144,22 @@ body {
 
 .sns-follow {
   box-sizing: border-box;
-  flex: none;
+  position: absolute;
+  right: -50px;
+  top: 65px;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px 54px;
   gap: 10px;
-  width: 213px;
+  width: 215px;
   height: 67px;
   border: 2px solid rgba(0, 0, 0, 0.6);
   border-radius: 50px;
   font-family: "Paperlogy";
   font-style: normal;
   font-weight: 600;
-  font-size: 23px;
+  font-size: 21px;
   line-height: 27px;
   letter-spacing: 0.03em;
   color: #000000;
