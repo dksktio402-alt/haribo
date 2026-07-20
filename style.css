@@ -121,8 +121,8 @@ body {
   position: absolute;
   width: 149.75px;
   height: 149.75px;
-  left: 39%;
-  top: 592px;
+  left: 41%;
+  top: 420px;
   object-fit: contain;
   transform: rotate(-9.4deg);
   z-index: 2;
@@ -143,7 +143,7 @@ body {
 .headline {
   position: relative;
   top: -90px;
-  left: 20px;
+  left: 25px;
   height: 92px;
   width: max-content;
 }
@@ -152,13 +152,13 @@ body {
   position: absolute;
   inset: 0;
   color: #000000;
-  -webkit-text-stroke: 16px #83673a;
+  -webkit-text-stroke: 13px #83673a;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-family: "Cafe24Ssurround";
   font-style: normal;
   font-weight: 400;
-  font-size: 75px;
-  line-height: 76px;
+  font-size: 60px;
+  line-height: 61px;
 }
 
 .headline .fill {
@@ -167,8 +167,8 @@ body {
   font-family: "Cafe24Ssurround";
   font-style: normal;
   font-weight: 400;
-  font-size: 75px;
-  line-height: 76px;
+  font-size: 60px;
+  line-height: 61px;
   text-shadow:
     0 -2px 0 rgba(255, 255, 255, 0.9),
     0 2px 0 rgba(255, 255, 255, 0.35),
@@ -180,7 +180,7 @@ body {
   position: absolute;
   width: 200px;
   height: 200px;
-  left: 43%;
+  left: 46%;
   top: 500px;
   object-fit: contain;
   transform: rotate(18.22deg);
