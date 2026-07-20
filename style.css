@@ -1,0 +1,1057 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Recipekorea";
+  src: url("./font/Recipekorea.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #f5efe0;
+  font-family: "NanumSquare", "Apple SD Gothic Neo", sans-serif;
+}
+
+.frame-56 {
+  position: relative;
+  width: 100%;
+  min-height: 947px;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.frame-56::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(193, 177, 3, 0.7) 0%,
+    rgba(248, 237, 118, 0.5) 23.56%,
+    rgba(217, 217, 217, 0) 62.5%,
+    #fffac2 100%
+  );
+  z-index: 0;
+}
+
+.top-bar {
+  position: absolute;
+  left: 67px;
+  top: 67px;
+  width: 1298px;
+  height: 81px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+
+.logo-main {
+  width: 264px;
+  height: 81px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-main img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.nav-pill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 55px;
+  padding: 10px 40px;
+  width: 456px;
+  height: 55px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 60px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+}
+
+.nav-pill a {
+  text-decoration: none;
+  color: inherit;
+  font-family: "NanumSquare", sans-serif;
+}
+
+.logo-badge {
+  position: absolute;
+  width: 90px;
+  height: 138px;
+  left: 1300px;
+  top: 28px;
+  object-fit: contain;
+  display: block;
+  z-index: 2;
+}
+
+.hero-illustration {
+  position: absolute;
+  width: 535px;
+  height: 730px;
+  left: 823px;
+  top: 298px;
+  object-fit: contain;
+  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.5));
+  z-index: 1;
+}
+
+.small-candy {
+  position: absolute;
+  width: 149.75px;
+  height: 149.75px;
+  left: 536px;
+  top: 592px;
+  object-fit: contain;
+  transform: rotate(-9.4deg);
+  z-index: 2;
+}
+
+.hero-text {
+  position: absolute;
+  left: 80px;
+  top: 431px;
+  width: 691px;
+  height: 203px;
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+  z-index: 2;
+}
+
+.headline {
+  position: relative;
+  height: 92px;
+  width: max-content;
+}
+
+.headline .stroke {
+  position: absolute;
+  inset: 0;
+  color: #000000;
+  -webkit-text-stroke: 20px #83673a;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: "BR B", "Apple Myungjo", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 90px;
+  line-height: 92px;
+}
+
+.headline .fill {
+  position: relative;
+  color: #ffec59;
+  font-family: "BR B", "Apple Myungjo", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 90px;
+  line-height: 92px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.candy-red {
+  position: absolute;
+  width: 245px;
+  height: 245px;
+  left: 586px;
+  top: 624px;
+  object-fit: contain;
+  transform: rotate(18.22deg);
+  z-index: 2;
+}
+
+/* ===== 2~4 section ===== */
+
+.section-meet {
+  position: relative;
+  width: 100%;
+  height: 2760px;
+  background: #fff9e6;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.meet-blob {
+  position: absolute;
+  width: 2793px;
+  height: 2636px;
+  left: calc(50% - 2793px / 2 + 0.5px);
+  top: 4px;
+  background: #fff6c5;
+  border-radius: 0 0 1400px 1400px;
+  z-index: 0;
+}
+
+.meet-heading {
+  position: absolute;
+  width: 498px;
+  left: 471px;
+  top: 585px;
+  margin: 0;
+  font-family: "Cafe24 Ssurround";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 80px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #402500;
+  z-index: 2;
+}
+
+/* -- stats banner (Frame 55) -- */
+
+.stats-banner {
+  position: absolute;
+  width: 100%;
+  height: 380px;
+  left: 0px;
+  top: 0px;
+  background: #ffffff;
+  z-index: 4;
+} 
+
+.stats-dot {
+  position: absolute;
+  width: 6px;
+  height: 8px;
+  left: 1409px;
+  top: 278px;
+  background: #d9d9d9;
+}
+
+.stats-row {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 65px;
+  width: 1484px;
+  height: 163px;
+  left: calc(50% - 1484px / 2);
+  top: calc(50% - 163px / 2);
+}
+
+.stat-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  flex: none;
+}
+
+.stat-block--wide {
+  width: 520px;
+}
+
+.stat-block--mid {
+  width: 280px;
+}
+
+.stat-block--narrow {
+  width: 320px;
+}
+
+.stat-number {
+  margin: 0;
+  font-family: "Cafe24 Ssurround";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 91px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #584a00;
+  white-space: nowrap;
+}
+
+.stat-label {
+  margin: 0;
+  font-family: "paybooc";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #584a00;
+  white-space: nowrap;
+}
+
+.stat-divider {
+  width: 2px;
+  height: 163px;
+  background: #584a00;
+  flex: none;
+}
+
+/* -- flavor carousel (Frame 7) -- */
+
+.flavor-carousel-viewport {
+  position: absolute;
+  left: 0;
+  top: 742px;
+  width: 100vw;
+  height: 460px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  z-index: 2;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.flavor-carousel-viewport::-webkit-scrollbar {
+  display: none;
+}
+
+.flavor-carousel {
+  display: flex;
+  align-items: flex-end;
+  gap: 50px;
+  width: max-content;
+  height: 460px;
+}
+
+.flavor-card-wrap {
+  position: relative;
+  flex: none;
+  width: 666px;
+  height: 460px;
+}
+
+.flavor-card {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 666px;
+  height: 347px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.flavor-card--starmix {
+  background: #64a9d4;
+}
+
+.flavor-card--goldbaren {
+  background: #ffe86e;
+}
+
+.flavor-card--cola {
+  background: #7f572f;
+}
+
+.flavor-card--grapes {
+  background: #aa8dc4;
+}
+
+.flavor-card--bussi {
+  background: #e8c68a;
+}
+
+.flavor-card--worms {
+  background: #00cc33;
+}
+
+.flavor-card-bg-deco {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  z-index: 1;
+  opacity: 0.6;
+}
+
+.flavor-card--starmix .flavor-card-bg-deco {
+  width: 252.19px;
+  height: 252.19px;
+  left: 452.29px;
+  top: 75.16px;
+  transform: matrix(-0.98, -0.22, -0.22, 0.98, 0, 0);
+  background-image: url("images/데코요소/우주선 이미지.png");
+}
+
+.flavor-card--goldbaren .flavor-card-bg-deco {
+  width: 410px;
+  height: 273px;
+  left: 330px;
+  top: 90px;
+  background-image: url("images/데코요소/과일이미지.png");
+}
+
+.flavor-card--cola .flavor-card-bg-deco {
+  width: 300px;
+  height: 300px;
+  left: 430px;
+  top: 90px;
+  transform: rotate(3deg);
+  background-image: url("images/데코요소/콜라 이미지.png");
+}
+
+.flavor-card--grapes .flavor-card-bg-deco {
+  width: 173.35px;
+  height: 269.92px;
+  left: 528px;
+  top: 115px;
+  transform: rotate(-2.05deg);
+  background-image: url("images/데코요소/포도 이미지.png");
+}
+
+.flavor-card-deco {
+  position: absolute;
+  width: 300px;
+  height: 345px;
+  left: 310px;
+  bottom: 57px;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: contain;
+  z-index: 5;
+  filter: drop-shadow(0px 8px 10px rgba(0, 0, 0, 0.25));
+}
+
+.flavor-card-wrap--starmix .flavor-card-deco {
+  background-image: url("images/공식 이미지/Starmix_100g_5012035901738.png");
+}
+
+.flavor-card-wrap--goldbaren .flavor-card-deco {
+  background-image: url("images/공식 이미지/haribo.orgin.png");
+}
+
+.flavor-card-wrap--cola .flavor-card-deco {
+  background-image: url("images/공식 이미지/HAPPY_COLA_PACKSHOT.png");
+}
+
+.flavor-card-wrap--grapes .flavor-card-deco {
+  background-image: url("images/공식 이미지/Happy_Grapes_100g-new-1.png");
+}
+
+.flavor-card-wrap--bussi .flavor-card-deco {
+  background-image: url("images/공식 이미지/Fruity_Bussi_100g_4001686375754.png");
+}
+
+.flavor-card-wrap--worms .flavor-card-deco {
+  background-image: url("images/공식 이미지/Worms-Zourr-100-g_8691216095557.png");
+}
+
+.flavor-card-content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 102px;
+  left: 37px;
+  top: 50px;
+  width: 260px;
+}
+
+ .flavor-card--starmix .flavor-card-content {
+  top: 40px;
+  width: 250px;
+} 
+
+.flavor-card-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 21px;
+  align-self: stretch;
+}
+
+.flavor-card-title {
+  margin: 0;
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 800;
+  line-height: 35px;
+  letter-spacing: 0.03em;
+}
+
+.flavor-card--starmix .flavor-card-title,
+.flavor-card--cola .flavor-card-title,
+.flavor-card--grapes .flavor-card-title,
+.flavor-card--bussi .flavor-card-title,
+.flavor-card--worms .flavor-card-title {
+  color: #ffffff;
+}
+
+.flavor-card--goldbaren .flavor-card-title {
+  color: #653900;
+}
+
+.flavor-card--starmix .flavor-card-title {
+  font-size: 35px;
+}
+
+.flavor-card--goldbaren .flavor-card-title {
+  font-size: 35px;
+}
+
+.flavor-card--cola .flavor-card-title,
+.flavor-card--grapes .flavor-card-title,
+.flavor-card--bussi .flavor-card-title,
+.flavor-card--worms .flavor-card-title {
+  font-size: 33px;
+}
+
+.flavor-card-desc {
+  margin: 0;
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+}
+
+.flavor-card--goldbaren .flavor-card-desc {
+  font-size: 24px;
+  color: #653900;
+}
+
+.flavor-card--starmix .flavor-card-desc,
+.flavor-card--cola .flavor-card-desc,
+.flavor-card--grapes .flavor-card-desc,
+.flavor-card--bussi .flavor-card-desc,
+.flavor-card--worms .flavor-card-desc {
+  color: #ffffff;
+}
+
+.taste-more {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 25px;
+  gap: 10px;
+  width: 148px;
+  height: 41px;
+  background: #ffffff;
+  border-radius: 20px;
+  font-family: "Suseong Dotum";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 35px;
+  letter-spacing: 0.03em;
+  color: #000000;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+/* -- view more carousel controls (Frame 10) -- */
+
+.carousel-controls {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  width: 309px;
+  height: 47px;
+  left: calc(50% - 309px / 2 - 0.5px);
+  top: 1298px;
+  z-index: 3;
+}
+
+.carousel-arrow {
+  flex: none;
+  width: 47px;
+  height: 47px;
+  border-radius: 50%;
+  background: #000000;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-arrow .arrow-chevron {
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+}
+
+.carousel-arrow--prev .arrow-chevron {
+  transform: rotate(135deg);
+}
+
+.carousel-arrow--next .arrow-chevron {
+  transform: rotate(-45deg);
+}
+
+.view-more-pill {
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 25px;
+  width: 163px;
+  height: 47px;
+  background: #000000;
+  border-radius: 33px;
+  font-family: "Suseong Dotum";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 27px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+/* -- HARIBO Official showcase (Frame 34) -- */
+
+.official-header {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: max-content;
+  height: 75px;
+  left: 378px;
+  top: 1607px;
+  z-index: 3;
+}
+
+.official-header h3 {
+  margin: 0;
+  width: auto;
+  height: 75px;
+  font-family: "Cafe24 Ssurround";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 100%;
+  letter-spacing: 0.03em;
+  color: #402500;
+  white-space: nowrap;
+  flex: none;
+}
+
+.official-arrow-btn {
+  box-sizing: border-box;
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  border: 1.5px solid rgba(0, 0, 0, 0.51);
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+.official-arrow-btn .arrow-icon {
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+  transform: rotate(-45deg);
+}
+
+.official-screenshot {
+  position: absolute;
+  width: 1071px;
+  height: 603px;
+  left: 185px;
+  top: 1747px;
+  border-radius: 40px;
+  object-fit: cover;
+  z-index: 2;
+}
+
+.official-caption {
+  position: absolute;
+  width: 418px;
+  left: 511px;
+  top: 2398px;
+  margin: 0;
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 35px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #000000;
+  z-index: 2;
+}
+
+/* ===== history section ===== */
+
+.history-section {
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  height: 945px;
+  background: #fff9e6;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+}
+
+.history-heading {
+  position: absolute;
+  width: 331px;
+  left: 71px;
+  top: 97px;
+  margin: 0;
+  font-family: "Cafe24 Ssurround";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 35px;
+  letter-spacing: 0.03em;
+  color: #402500;
+}
+
+.history-panel {
+  position: absolute;
+  top: 220px;
+  height: 624px;
+}
+
+.history-panel--left {
+  left: 0;
+  width: 52.9167%;
+  background: #8e2626;
+}
+
+.history-panel--right {
+  left: 52.9167%;
+  width: 47.0833%;
+  background: #ffffff;
+}
+
+.history-year {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 88px;
+  left: 43px;
+  top: 329px;
+  width: 663px;
+  height: 35px;
+}
+
+.history-year span {
+  flex: none;
+  font-family: "Recipekorea";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 200px;
+  line-height: 35px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #ffc300;
+}
+
+.history-year span:first-child {
+  width: 271px;
+}
+
+.history-year span:last-child {
+  width: 304px;
+}
+
+.history-bear {
+  position: absolute;
+  width: 231px;
+  height: 288px;
+  left: 243px;
+  top: 155px;
+  object-fit: contain;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
+}
+
+.history-content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 74px;
+  left: 57px;
+  top: 100px;
+  width: 427px;
+  height: 455px;
+}
+
+.history-text-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  align-self: stretch;
+}
+
+.history-text-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  align-self: stretch;
+}
+
+.history-eyebrow {
+  margin: 0;
+  align-self: stretch;
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 35px;
+  color: #585858;
+}
+
+.history-headline {
+  margin: 0;
+  font-family: "Cafe24 Ssurround OTF";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 85px;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
+.history-desc {
+  margin: 0;
+  width: 380px;
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 0.04em;
+  color: #373737;
+}
+
+.history-cta {
+  display: flex;
+  flex: none;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 39px;
+  gap: 10px;
+  width: 197px;
+  height: 68px;
+  background: #ffc300;
+  border-radius: 55px;
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+/* ===== event section ===== */
+
+.event-section {
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  height: 906px;
+  background: #fff9e6;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+}
+
+.event-heading {
+  position: absolute;
+  width: 252px;
+  left: 73px;
+  top: 75px;
+  margin: 0;
+  font-family: "Cafe24 Ssurround";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 35px;
+  letter-spacing: 0.03em;
+  color: #402500;
+}
+
+.event-card {
+  position: absolute;
+  background: #ffecae;
+  border-radius: 40px;
+}
+
+.event-card--large {
+  box-sizing: border-box;
+  left: 73px;
+  top: 215px;
+  width: 688px;
+  height: 553px;
+  padding: 16px 16px 25px;
+  background: none;
+  isolation: isolate;
+}
+
+.event-card-bg {
+  position: absolute;
+  inset: 0;
+  background: #ffecae;
+  border-radius: 40px;
+  z-index: 0;
+}
+
+.event-card-photo {
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  width: 655px;
+  height: 338px;
+  background: #caa321 url("images/sns 섹션/event.png") center / cover no-repeat;
+  border-radius: 35px 35px 0px 0px;
+  z-index: 1;
+}
+
+.event-card--small {
+  box-sizing: border-box;
+  left: 799px;
+  width: 560px;
+  height: 262px;
+  padding: 20px 39px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.event-card--small-top {
+  top: 215px;
+}
+
+.event-card--small-bottom {
+  top: 506px;
+}
+
+.event-info-row {
+  position: absolute;
+  left: 35px;
+  top: 384px;
+  width: 617px;
+  height: 138px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 159px;
+  z-index: 2;
+}
+
+.event-info-row--small {
+  position: static;
+  width: 482px;
+  height: 222px;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.event-info-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  width: 339px;
+  height: 138px;
+  flex: none;
+}
+
+.event-info-text--small {
+  width: 280px;
+  height: 212px;
+}
+
+.event-badge {
+  display: flex;
+  flex: none;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 26px;
+  gap: 10px;
+  width: 95px;
+  height: 30px;
+  background: #ffffff;
+  border-radius: 50px;
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.03em;
+  color: #000000;
+  box-sizing: border-box;
+}
+
+.event-title {
+  margin: 0;
+  align-self: stretch;
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
+.event-desc {
+  margin: 0;
+  flex: none;
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
+.event-date {
+  margin: 0;
+  align-self: stretch;
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  color: #868686;
+}
+
+.event-more {
+  flex: none;
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #000000;
+  text-decoration: none;
+}
+
+.event-more--small {
+  font-size: 18px;
+  line-height: 21px;
+}
