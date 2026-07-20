@@ -7,6 +7,11 @@
   src: url("./font/Recipekorea.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Cafe24Ssurround";
+  src: url("./font/Cafe24Ssurround.ttf") format("truetype");
+}
+
 html {
   margin: 0;
   padding: 0;
@@ -147,7 +152,7 @@ body {
   color: #000000;
   -webkit-text-stroke: 16px #83673a;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  font-family: "BR B", "Apple Myungjo", serif;
+  font-family: "Cafe24Ssurround";
   font-style: normal;
   font-weight: 400;
   font-size: 75px;
@@ -157,7 +162,7 @@ body {
 .headline .fill {
   position: relative;
   color: #ffec59;
-  font-family: "BR B", "Apple Myungjo", serif;
+  font-family: "Cafe24Ssurround";
   font-style: normal;
   font-weight: 400;
   font-size: 75px;
