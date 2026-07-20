@@ -117,6 +117,16 @@ body {
   z-index: 1;
 }
 
+@keyframes float-small-candy {
+  0%,
+  100% {
+    transform: rotate(-9.4deg) translateY(0);
+  }
+  50% {
+    transform: rotate(-9.4deg) translateY(-15px);
+  }
+}
+
 .small-candy {
   position: absolute;
   width: 149.75px;
@@ -126,6 +136,7 @@ body {
   object-fit: contain;
   transform: rotate(-9.4deg);
   z-index: 2;
+  animation: float-small-candy 2.2s ease-in-out infinite;
 }
 
 .hero-text {
@@ -176,6 +187,16 @@ body {
     0 8px 10px rgba(80, 50, 10, 0.25);
 }
 
+@keyframes float-candy-red {
+  0%,
+  100% {
+    transform: rotate(18.22deg) translateY(0);
+  }
+  50% {
+    transform: rotate(18.22deg) translateY(-15px);
+  }
+}
+
 .candy-red {
   position: absolute;
   width: 200px;
@@ -185,6 +206,7 @@ body {
   object-fit: contain;
   transform: rotate(18.22deg);
   z-index: 2;
+  animation: float-candy-red 2.8s ease-in-out infinite;
 }
 
 /* ===== 2~4 section ===== */
