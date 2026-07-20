@@ -1015,6 +1015,11 @@ body {
   color: #000000;
 }
 
+.event-title--small {
+  width: 400px;
+  white-space: nowrap;
+}
+
 .event-desc {
   margin: 0;
   flex: none;
@@ -1054,4 +1059,191 @@ body {
 .event-more--small {
   font-size: 18px;
   line-height: 21px;
+}
+
+/* ===== sns section ===== */
+
+.sns-section {
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  height: 740px;
+  background: #fff9e6;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+}
+
+.sns-header {
+  position: absolute;
+  left: -10px;
+  top: 0px;
+  width: 1285px;
+  height: 67px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 560px;
+}
+
+.sns-brand {
+  box-sizing: border-box;
+  flex: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  width: 418px;
+  height: 55px;
+}
+
+.sns-instagram {
+  margin: 0;
+  width: 398px;
+  font-family: "Cafe24 Ssurround OTF";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 35px;
+  letter-spacing: 0.03em;
+  color: #402500;
+}
+
+.sns-follow {
+  box-sizing: border-box;
+  flex: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 54px;
+  gap: 10px;
+  width: 213px;
+  height: 67px;
+  border: 2px solid rgba(0, 0, 0, 0.6);
+  border-radius: 50px;
+  font-family: "Paperlogy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 27px;
+  letter-spacing: 0.03em;
+  color: #000000;
+  text-decoration: none;
+}
+
+.sns-username {
+  box-sizing: border-box;
+  position: absolute;
+  left: 80px;
+  top: 157px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  width: 182px;
+  height: 44px;
+  font-family: "Paperlogy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
+.sns-grid {
+  position: absolute;
+  left: 76px;
+  top: 264px;
+  width: 1287px;
+  height: 306px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 25px;
+}
+
+.sns-tile {
+  position: relative;
+  flex: none;
+  width: 303px;
+  height: 306px;
+  background: #c9c9c9;
+  overflow: hidden;
+}
+
+.sns-tile-photo {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.sns-tile--1 .sns-tile-photo {
+  width: 312px;
+  height: 555px;
+  left: -4px;
+  top: -80px;
+  background-image: url("images/sns 섹션/여름한정판2.jpg");
+}
+
+.sns-tile--2 .sns-tile-photo {
+  width: 303px;
+  height: 539px;
+  left: 0px;
+  top: -88px;
+  background-image: url("images/sns 섹션/하리보 여름한정판.jpg");
+}
+
+.sns-tile--3 .sns-tile-photo {
+  width: 303px;
+  height: 539px;
+  left: 0px;
+  top: -95px;
+  background-image: url("images/sns 섹션/게시물 2.jpg");
+}
+
+.sns-tile--4 .sns-tile-photo {
+  width: 303px;
+  height: 539px;
+  left: 0px;
+  top: -126px;
+  background-image: url("images/sns 섹션/게시물3.jpg");
+}
+
+.sns-tile-badge {
+  box-sizing: border-box;
+  position: absolute;
+  left: 13px;
+  top: 265px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 13px;
+  gap: 10px;
+  height: 25px;
+  background: #ffffff;
+  border-radius: 30px;
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #323232;
+  z-index: 1;
+}
+
+.sns-tile--2 .sns-tile-badge {
+  left: 14px;
+}
+
+.sns-tile--3 .sns-tile-badge {
+  left: 22px;
+}
+
+.sns-tile--4 .sns-tile-badge {
+  left: 15px;
 }
