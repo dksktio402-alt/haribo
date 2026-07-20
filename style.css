@@ -142,6 +142,8 @@ body {
 
 .headline {
   position: relative;
+  top: -90px;
+  left: 20px;
   height: 92px;
   width: max-content;
 }
@@ -176,10 +178,10 @@ body {
 
 .candy-red {
   position: absolute;
-  width: 245px;
-  height: 245px;
+  width: 200px;
+  height: 200px;
   left: 43%;
-  top: 624px;
+  top: 500px;
   object-fit: contain;
   transform: rotate(18.22deg);
   z-index: 2;
