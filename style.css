@@ -12,6 +12,11 @@
   src: url("./font/Cafe24Ssurround.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "SeoulAlrimTTF-ExtraBold";
+  src: url("./font/SeoulAlrimTTF-ExtraBold.ttf") format("truetype");
+}
+
 html {
   margin: 0;
   padding: 0;
@@ -165,7 +170,7 @@ body {
   color: #000000;
   -webkit-text-stroke: 13px #83673a;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  font-family: "Cafe24Ssurround";
+  font-family: "SeoulAlrimTTF-ExtraBold";
   font-style: normal;
   font-weight: 400;
   font-size: 60px;
@@ -175,7 +180,7 @@ body {
 .headline .fill {
   position: relative;
   color: #ffe64f;
-  font-family: "Cafe24Ssurround";
+  font-family: "SeoulAlrimTTF-ExtraBold";
   font-style: normal;
   font-weight: 400;
   font-size: 60px;
