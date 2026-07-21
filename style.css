@@ -168,7 +168,7 @@ body {
   position: absolute;
   inset: 0;
   color: #000000;
-  -webkit-text-stroke: 13px #83673a;
+  -webkit-text-stroke: 9px #83673a;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-family: "SeoulAlrimTTF-ExtraBold";
   font-style: normal;
@@ -346,7 +346,7 @@ body {
   left: 0;
   top: 680px;
   width: 100vw;
-  height: 460px;
+  height: 368px;
   overflow-x: auto;
   overflow-y: hidden;
   scroll-behavior: smooth;
@@ -362,25 +362,25 @@ body {
 .flavor-carousel {
   display: flex;
   align-items: flex-end;
-  gap: 50px;
+  gap: 40px;
   width: max-content;
-  height: 460px;
+  height: 368px;
 }
 
 .flavor-card-wrap {
   position: relative;
   flex: none;
-  width: 666px;
-  height: 460px;
+  width: 533px;
+  height: 368px;
 }
 
 .flavor-card {
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 666px;
-  height: 347px;
-  border-radius: 30px;
+  width: 533px;
+  height: 278px;
+  border-radius: 24px;
   overflow: hidden;
 }
 
@@ -418,51 +418,57 @@ body {
 }
 
 .flavor-card--starmix .flavor-card-bg-deco {
-  width: 252.19px;
-  height: 252.19px;
-  left: 452.29px;
-  top: 75.16px;
+  width: 201.75px;
+  height: 201.75px;
+  left: 361.83px;
+  top: 60.13px;
   transform: matrix(-0.98, -0.22, -0.22, 0.98, 0, 0);
   background-image: url("images/데코요소/우주선 이미지.png");
 }
 
 .flavor-card--goldbaren .flavor-card-bg-deco {
-  width: 410px;
-  height: 273px;
-  left: 330px;
-  top: 90px;
+  width: 328px;
+  height: 218px;
+  left: 264px;
+  top: 72px;
   background-image: url("images/데코요소/과일이미지.png");
 }
 
 .flavor-card--cola .flavor-card-bg-deco {
-  width: 300px;
-  height: 300px;
-  left: 430px;
-  top: 90px;
+  width: 240px;
+  height: 240px;
+  left: 344px;
+  top: 72px;
   transform: rotate(3deg);
   background-image: url("images/데코요소/콜라 이미지.png");
 }
 
 .flavor-card--grapes .flavor-card-bg-deco {
-  width: 173.35px;
-  height: 269.92px;
-  left: 528px;
-  top: 115px;
+  width: 138.68px;
+  height: 216px;
+  left: 422px;
+  top: 92px;
   transform: rotate(-2.05deg);
   background-image: url("images/데코요소/포도 이미지.png");
 }
 
 .flavor-card-deco {
   position: absolute;
-  width: 300px;
-  height: 345px;
-  left: 310px;
-  bottom: 57px;
+  width: 240px;
+  height: 276px;
+  left: 248px;
+  bottom: 46px;
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: contain;
   z-index: 5;
-  filter: drop-shadow(0px 8px 10px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0px 6px 8px rgba(0, 0, 0, 0.25));
+  transform-origin: bottom center;
+  transition: transform 0.3s ease;
+}
+
+.flavor-card-wrap:hover .flavor-card-deco {
+  transform: scale(1.1);
 }
 
 .flavor-card-wrap--starmix .flavor-card-deco {
@@ -494,22 +500,22 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 102px;
-  left: 37px;
-  top: 50px;
-  width: 260px;
+  gap: 82px;
+  left: 30px;
+  top: 40px;
+  width: 208px;
 }
 
  .flavor-card--starmix .flavor-card-content {
-  top: 40px;
-  width: 250px;
-} 
+  top: 32px;
+  width: 200px;
+}
 
 .flavor-card-text {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 21px;
+  gap: 17px;
   align-self: stretch;
 }
 
@@ -518,7 +524,7 @@ body {
   font-family: "Pretendard";
   font-style: normal;
   font-weight: 800;
-  line-height: 35px;
+  line-height: 28px;
   letter-spacing: 0.03em;
 }
 
@@ -535,18 +541,18 @@ body {
 }
 
 .flavor-card--starmix .flavor-card-title {
-  font-size: 35px;
+  font-size: 28px;
 }
 
 .flavor-card--goldbaren .flavor-card-title {
-  font-size: 35px;
+  font-size: 28px;
 }
 
 .flavor-card--cola .flavor-card-title,
 .flavor-card--grapes .flavor-card-title,
 .flavor-card--bussi .flavor-card-title,
 .flavor-card--worms .flavor-card-title {
-  font-size: 33px;
+  font-size: 26px;
 }
 
 .flavor-card-desc {
@@ -554,13 +560,13 @@ body {
   font-family: "Pretendard";
   font-style: normal;
   font-weight: 700;
-  font-size: 21px;
-  line-height: 30px;
+  font-size: 17px;
+  line-height: 24px;
   letter-spacing: 0.03em;
 }
 
 .flavor-card--goldbaren .flavor-card-desc {
-  font-size: 24px;
+  font-size: 19px;
   color: #653900;
 }
 
@@ -577,17 +583,17 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 2px 25px;
-  gap: 10px;
-  width: 148px;
-  height: 41px;
+  padding: 2px 20px;
+  gap: 8px;
+  width: 118px;
+  height: 33px;
   background: #ffffff;
-  border-radius: 20px;
+  border-radius: 16px;
   font-family: "Suseong Dotum";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 35px;
+  font-size: 13px;
+  line-height: 28px;
   letter-spacing: 0.03em;
   color: #000000;
   text-decoration: none;
@@ -604,7 +610,7 @@ body {
   width: 309px;
   height: 47px;
   left: calc(50% - 309px / 2 - 0.5px);
-  top: 1298px;
+  top: 1140px;
   z-index: 3;
 }
 
@@ -670,7 +676,7 @@ body {
   height: 75px;
   left: 50%;
   transform: translateX(-50%);
-  top: 1607px;
+  top: 1515px;
   z-index: 3;
 }
 
@@ -716,7 +722,7 @@ body {
   height: 603px;
   left: 50%;
   transform: translateX(-50%);
-  top: 1747px;
+  top: 1655px;
   border-radius: 40px;
   object-fit: cover;
   z-index: 2;
@@ -727,7 +733,7 @@ body {
   width: 418px;
   left: 50%;
   transform: translateX(-50%);
-  top: 2398px;
+  top: 2306px;
   margin: 0;
   font-family: "Pretendard";
   font-style: normal;
