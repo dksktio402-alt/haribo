@@ -1220,8 +1220,8 @@ body {
 .sns-username {
   box-sizing: border-box;
   position: absolute;
-  left: 80px;
-  top: 150px;
+  left: 70px;
+  top: 140px;
   margin: 0;
   display: flex;
   align-items: center;
