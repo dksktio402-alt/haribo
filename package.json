@@ -1,8 +1,15 @@
 {
+  "scripts": {
+    "build:footer": "esbuild src/main.jsx --bundle --minify --jsx=automatic --outfile=dist/footer.bundle.js"
+  },
   "dependencies": {
-    "matter-js": "^0.20.0"
+    "framer-motion": "^12.42.2",
+    "matter-js": "^0.20.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
   },
   "devDependencies": {
-    "@types/matter-js": "^0.20.2"
+    "@types/matter-js": "^0.20.2",
+    "esbuild": "^0.28.1"
   }
 }
