@@ -8,6 +8,7 @@ const BEAR_IMAGES = [
   "images/데코요소/하리보 풋터4.png",
 ];
 const TRIGGER_PROGRESS = 0.6;
+const RESET_PROGRESS = 0.4; // hysteresis gap below TRIGGER_PROGRESS so it doesn't flicker at the boundary
 const GRAVITY = 0.9;
 const BOUNCE_DAMPING = 0.55;
 const REST_VELOCITY = 0.6;
@@ -114,9 +115,38 @@ export default function FallingBears({ containerRef }) {
     rafRef.current = requestAnimationFrame(tick);
   }
 
+  function resetBears() {
+    if (!triggeredRef.current) return;
+    triggeredRef.current = false;
+
+    if (rafRef.current) {
+      cancelAnimationFrame(rafRef.current);
+      rafRef.current = null;
+    }
+
+    bears.forEach((bear, i) => {
+      physicsRef.current[i] = {
+        y: bear.startY,
+        vy: 0,
+        rotation: bear.rotation,
+        vr: randomBetween(-2, 2),
+        started: false,
+        settled: false,
+      };
+
+      const el = bearElsRef.current[i];
+      if (el) {
+        el.style.opacity = "0";
+        el.style.transform = `translate3d(0, ${bear.startY}px, 0) rotate(${bear.rotation}deg)`;
+      }
+    });
+  }
+
   useMotionValueEvent(scrollYProgress, "change", (latest) => {
     if (!triggeredRef.current && latest >= TRIGGER_PROGRESS) {
       startFalling();
+    } else if (triggeredRef.current && latest < RESET_PROGRESS) {
+      resetBears();
     }
   });
 
