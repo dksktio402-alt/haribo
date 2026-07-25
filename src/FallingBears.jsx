@@ -17,7 +17,7 @@ function randomBetween(min, max) {
 }
 
 function createBears() {
-  const count = Math.floor(randomBetween(7, 10)); // 7~9
+  const count = Math.floor(randomBetween(11, 15)); // 11~14
   return Array.from({ length: count }, (_, i) => ({
     id: i,
     image: BEAR_IMAGES[Math.floor(Math.random() * BEAR_IMAGES.length)],
