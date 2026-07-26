@@ -18,12 +18,12 @@ function randomBetween(min, max) {
 }
 
 function createBears() {
-  const count = Math.floor(randomBetween(11, 15)); // 11~14
+  const count = Math.floor(randomBetween(18, 24)); // 18~23
   return Array.from({ length: count }, (_, i) => ({
     id: i,
     image: BEAR_IMAGES[Math.floor(Math.random() * BEAR_IMAGES.length)],
     left: randomBetween(2, 90), // %
-    size: randomBetween(67, 134), // px (base 48~96 + 40%)
+    size: randomBetween(80, 150), // px
     rotation: randomBetween(-35, 35), // deg
     startDelay: randomBetween(0, 400), // ms, staggered fall
     startY: randomBetween(-260, -80), // px, resting spot above footer while idle
@@ -163,6 +163,7 @@ export default function FallingBears({ containerRef }) {
             left: `${bear.left}%`,
             width: `${bear.size}px`,
             height: `${bear.size}px`,
+            zIndex: Math.round(bear.size),
             opacity: 0,
             transform: `translate3d(0, ${bear.startY}px, 0) rotate(${bear.rotation}deg)`,
           }}
