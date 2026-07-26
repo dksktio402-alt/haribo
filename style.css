@@ -965,6 +965,22 @@ body {
   position: absolute;
   background: #ffecae;
   border-radius: 40px;
+  opacity: 0;
+  transform: translateY(48px);
+  transition: opacity 0.45s ease, transform 0.45s ease;
+}
+
+.event-card.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.event-card--small-top.is-visible {
+  transition-delay: 0.1s;
+}
+
+.event-card--small-bottom.is-visible {
+  transition-delay: 0.2s;
 }
 
 .event-card--large {
