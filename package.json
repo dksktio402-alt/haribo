@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build:footer": "esbuild src/main.jsx --bundle --minify --jsx=automatic --outfile=dist/footer.bundle.js"
+    "build:react": "esbuild src/main.jsx --bundle --minify --jsx=automatic --outfile=dist/app.bundle.js"
   },
   "dependencies": {
     "framer-motion": "^12.42.2",

@@ -113,10 +113,10 @@ body {
 
 .hero-illustration {
   position: absolute;
-  width: 500px;
-  height: 682px;
-  left: 58%;
-  top: 200px;
+  width: 550px;
+  height: min(750px, 73vh);
+  left: min(58%, calc(100% - 570px));
+  top: min(500px, 23vh);
   object-fit: contain;
   filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.5));
   z-index: 1;
@@ -167,14 +167,30 @@ body {
 .headline .stroke {
   position: absolute;
   inset: 0;
-  color: #000000;
-  -webkit-text-stroke: 9px #83673a;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #83673a;
+  text-shadow:
+    11.7px 0 1.5px #83673a,
+    10.81px 4.48px 1.5px #83673a,
+    8.27px 8.27px 1.5px #83673a,
+    4.48px 10.81px 1.5px #83673a,
+    0 11.7px 1.5px #83673a,
+    -4.48px 10.81px 1.5px #83673a,
+    -8.27px 8.27px 1.5px #83673a,
+    -10.81px 4.48px 1.5px #83673a,
+    -11.7px 0 1.5px #83673a,
+    -10.81px -4.48px 1.5px #83673a,
+    -8.27px -8.27px 1.5px #83673a,
+    -4.48px -10.81px 1.5px #83673a,
+    0 -11.7px 1.5px #83673a,
+    4.48px -10.81px 1.5px #83673a,
+    8.27px -8.27px 1.5px #83673a,
+    10.81px -4.48px 1.5px #83673a,
+    0px 5.2px 5.2px rgba(0, 0, 0, 0.25);
   font-family: "SeoulAlrimTTF-ExtraBold";
   font-style: normal;
   font-weight: 400;
-  font-size: 60px;
-  line-height: 61px;
+  font-size: 78px;
+  line-height: 79px;
 }
 
 .headline .fill {
@@ -183,13 +199,13 @@ body {
   font-family: "SeoulAlrimTTF-ExtraBold";
   font-style: normal;
   font-weight: 400;
-  font-size: 60px;
-  line-height: 61px;
+  font-size: 78px;
+  line-height: 79px;
   text-shadow:
-    0 -2px 0 rgba(255, 255, 255, 0.9),
-    0 2px 0 rgba(255, 255, 255, 0.35),
-    0 5px 0 #8b6a35,
-    0 8px 10px rgba(80, 50, 10, 0.25);
+    0 -2.6px 0 rgba(255, 255, 255, 0.9),
+    0 2.6px 0 rgba(255, 255, 255, 0.35),
+    0 6.5px 0 #8b6a35,
+    0 10.4px 13px rgba(80, 50, 10, 0.25);
 }
 
 @keyframes float-candy-red {
@@ -228,7 +244,7 @@ body {
 .meet-blob {
   position: absolute;
   width: 2793px;
-  height: 2331px;
+  height: 2220px;
   left: calc(50% - 2793px / 2 + 0.5px);
   top: 4px;
   background: #fff6c5;
@@ -726,9 +742,10 @@ body {
   height: 450px;
   left: 50%;
   transform: translateX(-50%);
-  top: 1515px;
+  top: 1545px;
   border-radius: 40px;
-  object-fit: cover;
+  border: none;
+  overflow: hidden;
   z-index: 2;
 }
 
@@ -742,7 +759,7 @@ body {
   font-family: "Pretendard";
   font-style: normal;
   font-weight: 700;
-  font-size: 25px;
+  font-size: 20px;
   line-height: 35px;
   text-align: center;
   letter-spacing: 0.03em;
@@ -965,22 +982,6 @@ body {
   position: absolute;
   background: #ffecae;
   border-radius: 40px;
-  opacity: 0;
-  transform: translateY(48px);
-  transition: opacity 0.45s ease, transform 0.45s ease;
-}
-
-.event-card.is-visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.event-card--small-top.is-visible {
-  transition-delay: 0.1s;
-}
-
-.event-card--small-bottom.is-visible {
-  transition-delay: 0.2s;
 }
 
 .event-card--large {
